@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise3</title>
+    <!-- In this Exercise mostly we are using CSS-variables -->
+    <!--What we have to do in this exercise is written below  -->
+    <!-- first we have to make a navbar and then we have to change the colors of this navbar using CSS-variables  -->
+
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables */
+
+:root {
+    --bgcolor: rgb(163, 224, 87);
+    --hmcolor: rgb(232, 245, 84);
+    --abcolor: rgb(240, 120, 93);
+    --cncolor: rgb(119, 248, 220);
+    --abucolor: rgb(120, 153, 228);
+
+}
+
+.nav {
+    background-color: var(--bgcolor);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    padding: 10px;
+    border: 2px solid black;
+    margin: 3px;
+}
+
+li:first-child {
+    background-color: var(--hmcolor);
+}
+
+#ab {
+    background-color: var(--abcolor);
+}
+
+#cn {
+    background-color: var(--cncolor);
+}
+
+#abu {
+    background-color: var(--abucolor);
+}
+
+.para {
+    margin: 3px;
+    margin-top: 30px;
+    border: 2px solid black;
+    background-color: var(--bgcolor);
+
+}
+
+@media screen and (max-width:455px) {
+    li:first-child {
+        background-color: var(--cncolor);
+
+    }
+
+    #ab {
+        background-color: var(--abucolor);
+    }
+
+    #cn {
+        background-color: var(--hmcolor);
+    }
+
+    #abu {
+        background-color: var(--bgcolor);
+    }
+}
+
+    </style>
+</head>
+<body>
+<div class="nav">
+    <ul id="ul">
+        <li>Home</li>
+        <li id="ab">About</li>
+        <li id="cn">Contact</li>
+        <li id="abu">About us</li>
+    </ul>
+</div>
+<div class="para">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, exercitationem. Eum itaque sit aliquam in similique natus, officiis cupiditate iste molestiae voluptas provident consequuntur saepe voluptate atque quisquam ab laboriosam magni totam magnam eligendi at ratione neque debitis. Perferendis facilis accusamus suscipit itaque eligendi autem ipsum fuga rem blanditiis iure, cupiditate excepturi, quasi dolorum. Similique optio quidem veniam eligendi temporibus magni. Corporis iusto enim assumenda, necessitatibus, odio molestiae itaque ducimus, delectus quos quo cumque dolorem voluptatibus? Quidem in sapiente, saepe similique repellat totam facilis debitis inventore soluta, nobis sequi repudiandae, quia nesciunt provident doloribus! Ab facere impedit quia id corrupti laborum nihil, sapiente dolorem ducimus est itaque voluptatibus alias magnam laboriosam. Culpa consequatur illum quis possimus, ducimus sit ipsum quisquam atque incidunt maxime pariatur at qui ipsa voluptatibus impedit minus quae natus a illo. Adipisci magni officiis distinctio delectus? At sit ipsum sequi? Illum adipisci et perferendis dolorem eaque recusandae a hic! Molestiae maxime cum iste. Vel, atque ducimus? Ipsa quaerat, doloremque optio delectus, eaque dolorum, iusto asperiores ut magni quas placeat deserunt voluptatem? Eaque repellat, sunt libero consequatur deserunt corrupti tenetur minus perferendis culpa tempore hic animi exercitationem quam molestias iusto, voluptatum facere laudantium eum. Velit commodi dolorum quis ipsam doloribus optio sint omnis distinctio repellat? Sunt rerum ut laborum ducimus, facere fuga placeat quos molestiae, ab eius facilis libero recusandae nulla magni, maiores vero. Sit unde ex nostrum beatae dicta porro?</p>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
